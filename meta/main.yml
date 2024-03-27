@@ -1,4 +1,4 @@
 ---
 dependencies:
-  - { role: 'umd', crl_deploy: true }
-  - { role: 'munge', slurm_deploy: true }
+  - { role: 'umd', release: 4, crl_deploy: true }
+  - { role: 'ansible-role-munge', slurm_deploy: true }
