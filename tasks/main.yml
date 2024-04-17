@@ -1,7 +1,8 @@
-- name: Install WN package
-  package:
-    name: wn
-    state: latest
+#- name: Install WN package
+#  package:
+#    name: wn
+#    state: latest
+# Install:
 
 - name: Deploy glexec
   include: glexec.yml
