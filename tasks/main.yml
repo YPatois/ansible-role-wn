@@ -1,12 +1,11 @@
-#- name: Install WN package
-#  package:
-#    name: wn
-#    state: latest
-# Install:
+- name: Install wn rpm packages
+  yum:
+    name: wn
+    state: latest
 
-- name: Deploy glexec
-  include: glexec.yml
-  when: deploy_glexec
+#- name: Deploy glexec
+#  include_tasks: glexec.yml
+#  when: deploy_glexec
 
 #- include: slurm.yaml
 #  when: deploy_slurm
