@@ -3,6 +3,10 @@
     name: wn
     state: latest
 
+# FIXME: I think that should be done way earlier than in wn role
+- name: Configure Autofs
+  include_tasks: autofs.yml
+
 #- name: Deploy glexec
 #  include_tasks: glexec.yml
 #  when: deploy_glexec
