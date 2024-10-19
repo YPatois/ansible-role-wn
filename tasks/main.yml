@@ -1,7 +1,8 @@
-- name: Install wn rpm packages
-  yum:
-    name: wn
+- name: Install wn packages
+  dnf:
+    name: '{{ wn_rpm_packages }}'
     state: latest
+
 
 # FIXME: I think that should be done way earlier than in wn role
 - name: Configure Autofs

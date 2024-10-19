@@ -1,3 +1,16 @@
 deploy_slurm: true
 deploy_glexec: true
 argus_port: 8154
+
+wn_rpm_packages:
+  - 'wn'
+  - '@Development Tools'
+  - 'gcc'
+  - 'gcc-c++'
+  - 'gcc-gfortran'
+  - 'tcsh'
+  - 'umd-release'
+  - 'gfal2-all'
+  - 'gfal2-util-scripts'
+  - 'python3-gfal2-util'
+  - 'apptainer'
