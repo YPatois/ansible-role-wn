@@ -14,3 +14,4 @@ wn_rpm_packages:
   - 'gfal2-util-scripts'
   - 'python3-gfal2-util'
   - 'apptainer'
+  - 'git'
