@@ -5,8 +5,8 @@
 
 
 # FIXME: I think that should be done way earlier than in wn role
-- name: Configure Autofs
-  include_tasks: autofs.yml
+#- name: Configure Autofs
+#  include_tasks: autofs.yml
 
 #- name: Deploy glexec
 #  include_tasks: glexec.yml
