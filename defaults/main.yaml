@@ -15,3 +15,4 @@ wn_rpm_packages:
   - 'python3-gfal2-util'
   - 'apptainer'
   - 'git'
+  - 'time'
