@@ -3,6 +3,13 @@
     name: '{{ wn_rpm_packages }}'
     state: latest
 
+# FIXME: does not belong to any generic config, IPHC specific
+- name: Create symlinks to /grid-mnt
+  file:
+    path: '/iphc'
+    state: link
+    src: '/grid-mnt'
+    force: yes
 
 # FIXME: I think that should be done way earlier than in wn role
 #- name: Configure Autofs
