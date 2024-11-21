@@ -16,3 +16,5 @@ wn_rpm_packages:
   - 'apptainer'
   - 'git'
   - 'time'
+  - 'pdsh'
+
