@@ -5,6 +5,7 @@ argus_port: 8154
 wn_rpm_packages:
   - 'wn'
   - '@Development Tools'
+  - '@Standard'
   - 'gcc'
   - 'gcc-c++'
   - 'gcc-gfortran'
@@ -17,4 +18,12 @@ wn_rpm_packages:
   - 'git'
   - 'time'
   - 'pdsh'
-
+  - 'qt5-qtbase-gui'
+  - 'mesa-libGLU'
+  - 'libglvnd-opengl'
+  - 'motif'
+  - 'libXpm'
+  - 'xerces-c'
+  - 'qt5-qt3d'
+  - 'libarrow'
+  
