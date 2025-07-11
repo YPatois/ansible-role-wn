@@ -1,7 +1,20 @@
+---
+# Remove old arc packages
+#- name: Remove old arc packages
+#  yum:
+#    name: "{{ arc_ui_packages[arc_version-1] | default({}) }}"
+#    state: removed
+
 - name: Install wn packages
   dnf:
     name: '{{ wn_rpm_packages }}'
     state: latest
+
+- name: Install wn arc packages
+  dnf:
+    name: '{{ item }}'
+    state: latest
+  with_items: "{{ arc_wn_packages[arc_version] | default({}) }}"
 
 # FIXME: does not belong to any generic config, IPHC specific
 - name: Create symlinks to /grid-mnt

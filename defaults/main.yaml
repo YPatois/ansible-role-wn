@@ -2,6 +2,8 @@ deploy_slurm: true
 deploy_glexec: true
 argus_port: 8154
 
+arc_version: 6
+
 wn_rpm_packages:
   - 'wn'
   - '@Development Tools'
